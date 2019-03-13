@@ -1,0 +1,7 @@
+"User mutations"
+type Mutation {
+  """
+  Sign up a new user
+  """
+  signUp(email: String!, password: String!): User
+}

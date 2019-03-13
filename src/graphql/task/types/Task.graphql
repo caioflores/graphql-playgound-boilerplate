@@ -1,0 +1,21 @@
+"""
+Task: represents a task
+"""
+type Task {
+  """
+  Task id
+  """
+  id: ID!
+  """
+  Task content
+  """
+  name: String!
+  """
+  Task description
+  """
+  description: String
+  """
+  Task status
+  """
+  status: String
+}

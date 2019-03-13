@@ -1,0 +1,11 @@
+"Task mutations"
+type Mutation {
+  """
+  Sign up a new user
+  """
+  signUp(email: String!, password: String!): User
+  """
+  Create a task
+  """
+  createTask(name: String!, description: String, status: Status): Task
+}
