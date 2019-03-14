@@ -7,7 +7,7 @@ type Task {
   """
   id: ID!
   """
-  Task content
+  Task name
   """
   name: String!
   """

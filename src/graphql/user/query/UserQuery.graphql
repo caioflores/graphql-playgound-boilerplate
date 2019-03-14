@@ -1,3 +1,8 @@
+input AuthInput {
+  email: String!
+  password: String!
+}
+
 "User Queries"
 type Query {
   """
@@ -8,8 +13,8 @@ type Query {
   Get a user
   """
   users: [User]
-  """
+  """ 
   Get user credentials
   """
-  login(email: String!, password: String!): AuthToken
+  login(auth: AuthInput): AuthToken
 }

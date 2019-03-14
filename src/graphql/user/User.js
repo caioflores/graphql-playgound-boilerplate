@@ -7,7 +7,7 @@ module.exports = {
   Query: {
     user: (obj, { id }) => User.findByPk(id),
     users: () => User.findAll({ include: [Task] }),
-    login: (obj, args) => User.login(args)
+    login: (obj, args) => User.login(args.auth)
   },
   User: {
     tasks: async (obj, args, { auth }) => Task.findAll({ where: { UserId: auth.user.id } })
