@@ -1,0 +1,25 @@
+"""
+Pet: represents a pet
+"""
+interface Pet {
+  """
+  Pet id
+  """
+  id: ID!
+  """
+  Pet name
+  """
+  name: String!
+  """
+  Pet specie
+  """
+  specie: String!
+  """
+  Pet age
+  """
+  age: Int!
+  """
+  Pet gender
+  """
+  gender: String!
+}

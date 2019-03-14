@@ -1,0 +1,7 @@
+"Pet queries"
+type Query {
+  """
+  Get a pet
+  """
+  pet(name: String!): Pet
+}

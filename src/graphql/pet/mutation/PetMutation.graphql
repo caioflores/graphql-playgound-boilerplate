@@ -1,0 +1,14 @@
+"Pet mutations"
+type Mutation {
+  """
+  Create a pet
+  """
+  createPet(
+    name: String!
+    specie: String!
+    age: Int!
+    gender: String!
+    wingsNumber: Int
+    pawsNumber: Int
+  ): Pet
+}
